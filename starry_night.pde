@@ -20,7 +20,7 @@ void setup() {
   for (int i = 0; i < ground.length; ++i) {
     ground[i] = 30+noise(i)*50;
   }
-  noSmooth();
+  //noSmooth();
 }
 
 void draw() {
@@ -30,7 +30,7 @@ void draw() {
   for (int i = 0; i < numStars; ++i) {
     ellipse(northStarX+radii[i]*cos(angles[i]), northStarY+radii[i]*sin(angles[i]), 1, 1);
     if (!keyPressed) {
-      angles[i] += 0.0004;
+      angles[i] += 0.00004;
     }
   }
   fill(55);
